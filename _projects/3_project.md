@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 3 with very long name
+title: Visual Servoing
 description: a project that redirects to another website
-img: assets/img/7.jpg
+img: project_images/visual_servo/voyager-snsors.jpeg
 redirect: https://unsplash.com
 importance: 3
 category: work

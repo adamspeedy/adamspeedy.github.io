@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 4
+title: Localizing using Neural Radiance Fields (NeRF)
 description: another without an image
 img:
 importance: 3
