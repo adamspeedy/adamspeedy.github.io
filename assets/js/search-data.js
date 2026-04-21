@@ -446,18 +446,18 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
+            },},{id: "projects-embedded-play-around",
+          title: 'Embedded Play Around',
           description: "Embedded Play Around",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
+            },},{id: "projects-automatic-bird-scale",
+          title: 'Automatic Bird Scale',
           description: "Automatic Bird Scale",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
+            },},{id: "projects-matlab-simulation",
+          title: 'Matlab Simulation',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
