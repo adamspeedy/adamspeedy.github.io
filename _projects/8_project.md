@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 8
+title: Automatic Bird Scale
 description: Automatic Bird Scale
 img: assets/img/9.jpg
 importance: 2

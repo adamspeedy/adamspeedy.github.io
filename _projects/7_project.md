@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 7
+title: Embedded Play Around
 description: Embedded Play Around
 img: assets/img/4.jpg
 importance: 1
