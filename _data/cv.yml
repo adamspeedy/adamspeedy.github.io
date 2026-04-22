@@ -48,7 +48,7 @@ cv:
 
     Experience:
       - company: University of Capee Town
-        position: Research Assistant 
+        position: Research Assistant
         location: Hybrid, Cape Town, South Africa
         start_date: 2026
         end_date: Current
@@ -73,11 +73,10 @@ cv:
         end_date: Aug. 2023
 
       - company: Synthesis Technologies
-        position: Vacation Work 
+        position: Vacation Work
         location: Johannnesburg, South Africa
         start_date: Jul. 2021
         end_date: Aug. 2021
-
 
     Volunteer:
       - company: People's Climate March
@@ -106,7 +105,6 @@ cv:
         awarder: German Physical Society
         summary: Awarded for outstanding scientific achievement
 
-
     Publications:
       - title: "Osiris++: hierarchical representations for robotic-enabled precision agriculture"
         authors:
@@ -115,7 +113,6 @@ cv:
         releaseDate: 2026-02-26
         url: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1732004/full
         summary: A flexible approach designed to allow seamless communication between robots and humans on an array of precision agriculture tasks. We validate and evaluate the performance of Osiris++ in real-world agricultural environments, demonstrating that the system can create accurate and useful scene graphs that aid in solving the assigned tasks. This paves the way for the possibility of allowing natural language instructions, including those in African languages, to be issued to robots within the agricultural sector.
-
 
       - title: "Osiris++: hierarchical representations for robotic-enabled precision agriculture"
         authors:
