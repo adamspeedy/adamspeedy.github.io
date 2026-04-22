@@ -1,14 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - adamspeedy
+  # - alshedivat
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - adamspeedy/vtr3
+  - adamspeedy/Teach_Repeat
+  - adamspeedy/EEE4022S-NeRF-Localisation
+  - adamspeedy/gpusurf_testing
+  - adamspeedy/GradeScope_ECSA_rename
+  - adamspeedy/bag_image_extractor

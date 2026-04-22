@@ -2,7 +2,7 @@
 layout: page
 title: Visual Servoing
 description: a project that redirects to another website
-img: project_images/visual_servo/voyager-snsors.jpeg
+img: images/visual_servo/voyager-snsors.jpeg
 redirect: https://unsplash.com
 importance: 3
 category: work

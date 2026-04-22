@@ -2,7 +2,7 @@
 layout: page
 title: Semantic Navigation
 description: a project with a background image and giscus comments
-img: project_images/semantic_nav/photo_shoot.jpeg
+img: images/semantic_nav/photo_shoot.jpeg
 importance: 2
 category: work
 giscus_comments: true

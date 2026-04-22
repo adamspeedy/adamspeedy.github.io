@@ -1,8 +1,8 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Adam Speed-Andrews
+  label: Mechatronics Engineer
+  email: adamsa@mweb.co.za
+  location: Cape Town, South Africa
   image: ""
   summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
 
@@ -23,66 +23,61 @@ cv:
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+      - institution: University of Cape Town
+        location: Cape Town, South Africa
+        url: https://www.uct.ac.za/
+        area: Robotics
+        studyType: MSc Eng in Electrical Engineering
+        start_date: 2024
+        end_date: 2025
         score: ""
         courses: "Theory of Relativity"
         highlights:
           - Description 1.
           - Description 2.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: University of Cape Town
+        location: Cape Town, South Africa
+        area: Mechatronics
+        studyType: BSc Eng in Mechatronic Engineering
+        start_date: 2000
+        end_date: 2023
         highlights:
           - Description 1.
           - Description 2.
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
+      - company: University of Capee Town
+        position: Research Assistant 
+        location: Hybrid, Cape Town, South Africa
+        start_date: 2026
+        end_date: Current
         summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
         highlights:
           - Relativity
           - Description 2.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
+      - company: University of Cape Town
+        position: Teaching Assistant
         location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+        start_date: 2024
+        end_date: 2025
         highlights:
           - Description 1.
           - Description 2.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+      - company: NuTEC Digital Ink.
+        position: Automation Trainee
+        location: Cape Town, South Africa
+        start_date: Jul. 2023
+        end_date: Aug. 2023
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+      - company: Synthesis Technologies
+        position: Vacation Work 
+        location: Johannnesburg, South Africa
+        start_date: Jul. 2021
+        end_date: Aug. 2021
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
 
     Volunteer:
       - company: People's Climate March
@@ -111,16 +106,18 @@ cv:
         awarder: German Physical Society
         summary: Awarded for outstanding scientific achievement
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+    Publications:
+      - title: "Osiris++: hierarchical representations for robotic-enabled precision agriculture"
+        authors:
+          - Adam Mukuddem, Adam Speed-Andrews, Thabisa Maweni, Imannuel Nanyaro, Ritvik Sojen, Venny Hsiao and Paul Amayo
+        publisher: Frontiers in Robotics and AI
+        releaseDate: 2026-02-26
+        url: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1732004/full
+        summary: A flexible approach designed to allow seamless communication between robots and humans on an array of precision agriculture tasks. We validate and evaluate the performance of Osiris++ in real-world agricultural environments, demonstrating that the system can create accurate and useful scene graphs that aid in solving the assigned tasks. This paves the way for the possibility of allowing natural language instructions, including those in African languages, to be issued to robots within the agricultural sector.
+
+
+      - title: "Osiris++: hierarchical representations for robotic-enabled precision agriculture"
         authors:
           - Albert Einstein
         publisher: Annalen der Physik
