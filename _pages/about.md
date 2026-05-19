@@ -25,8 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an extrovert and thrive on interacting with people. I have strong communication skills, which I have developed through various courses and many years of teaching. Through my Master's degree with the African Robotics Unit, I have deepened my interest in computer vision and spatial intelligence through hands on experience with real-world visual systems. I have strong analytical and problem-solving skills, which I hope to apply and develop further in the sports technology industry. 
-
+I am an extrovert and thrive on interacting with people. I have strong communication skills, which I have developed through various courses and many years of teaching. Through my Master's degree with the African Robotics Unit, I have deepened my interest in computer vision and spatial intelligence through hands on experience with real-world visual systems. I have strong analytical and problem-solving skills, which I hope to apply and develop further in the sports technology industry.
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

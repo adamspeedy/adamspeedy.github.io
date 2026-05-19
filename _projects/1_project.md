@@ -2,7 +2,7 @@
 layout: page
 title: Long Term Navigation
 description: Investigating the use of multiple visual experinces of to autonomously repeat paths in agricultural settings.
-img: assets/img/12.jpg
+img: assets/long_term_nav_preview.jpg
 importance: 1
 category: work
 related_publications: true
@@ -26,7 +26,7 @@ To give your project a background in the portfolio page, just add the img tag to
         {% include figure.liquid loading="eager" path="images/long_term_nav/another_view.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="images/long_term_nav/a200_gif.mp4" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="images/long_term_nav/charging_a300.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="images/long_term_nav/rain_a300.mp4" title="example image" class="img-fluid rounded z-depth-1" %}
