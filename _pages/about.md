@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Adam Speed-Andrews
+title: about
 permalink: /
 subtitle: <a href='#'>Robotics Masters Candidate</a>. Mechatronics Engineer. Aspiring Rap Artist. Motto. Etc.
 
