@@ -2,9 +2,9 @@
 layout: page
 title: Semantic Navigation
 description: a project with a background image and giscus comments
-img: images/semantic_nav/photo_shoot.jpeg
+img: assets/img/semantic_nav/photo_shoot.jpeg
 importance: 2
-category: work
+category: robotics
 giscus_comments: true
 ---
 
@@ -18,7 +18,7 @@ To give your project a background in the portfolio page, just add the img tag to
     layout: page
     title: project
     description: a project with a background image
-    img: /assets/img/12.jpg
+    img: assets/img/semantic_nav/fun_in_field.jpeg
     ---
 
 <div class="row">

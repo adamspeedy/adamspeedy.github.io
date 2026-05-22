@@ -2,9 +2,9 @@
 layout: page
 title: Line Following Robot
 description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+img: assets/img/line_following/group_photo.jpeg
+importance: 4
+category: robotics
 ---
 
 Every project has a beautiful feature showcase page.

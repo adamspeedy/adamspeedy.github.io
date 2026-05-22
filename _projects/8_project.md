@@ -2,9 +2,9 @@
 layout: page
 title: Automatic Bird Scale
 description: Automatic Bird Scale
-img: assets/img/9.jpg
+img: assets/img/bird_scale/preview.jpeg
 importance: 2
-category: work
+category: software & automation
 giscus_comments: true
 ---
 

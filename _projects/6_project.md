@@ -2,9 +2,9 @@
 layout: page
 title: Instron Testing Machine
 description: a project with no image
-img:
-importance: 4
-category: fun
+img: assets/img/nutec/preview.jpeg
+importance: 1
+category: software & automation
 ---
 
 Every project has a beautiful feature showcase page.

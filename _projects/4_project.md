@@ -2,9 +2,9 @@
 layout: page
 title: Localizing using Neural Radiance Fields (NeRF)
 description: another without an image
-img:
-importance: 3
-category: fun
+img: assets/img//NeRF/NeRF_presentation.jpeg
+importance: 1
+category: robotics
 ---
 
 Every project has a beautiful feature showcase page.

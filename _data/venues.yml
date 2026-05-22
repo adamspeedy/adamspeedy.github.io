@@ -1,9 +1,7 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"ICRA":
+  url: https://2026.ieee-icra.org/
+  color: "#DE0D45"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"Frontiers":
+  url: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1732004/full
 
-"Vision":
-  color: "#009f36"

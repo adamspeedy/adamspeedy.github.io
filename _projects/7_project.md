@@ -2,9 +2,9 @@
 layout: page
 title: Embedded Play Around
 description: Embedded Play Around
-img: assets/img/4.jpg
-importance: 1
-category: work
+img: assets/img/embedded/sensors.jpeg
+importance: 3
+category: software & automation
 related_publications: true
 ---
 
