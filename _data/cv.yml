@@ -5,10 +5,11 @@ cv:
   location: London, United Kingdom
   phone: +44 7759 337 946
   image: ""
-  summary: A Masters in Electrical Engineering Candidate with a strong background in Mechatronics, specializing in Robotics, Computer Vision, and Machine Learning. Experienced in research and teaching, with a focus on long-term navigation of ground robots in agricultural environments. 
+  summary: A Masters in Electrical Engineering Candidate with a strong background in Mechatronics, specializing in Robotics, Computer Vision, and Machine Learning. Experienced in research and teaching, with a focus on long-term navigation of ground robots in agricultural environments. I'm particularly interested in building robotic systems that can operate robustly in complex, dynamic real-world environments. Having recently relocated to London, I am currently seeking opportunities in robotics, autonomous systems, computer vision, or related engineering fields.
+
+
 
   social_networks:
-
     - network: GitHub
       username: adamspeedy
     - network: LinkedIn
@@ -17,8 +18,8 @@ cv:
   address:
     street: 
     city: London
-    region: Greater London
-    postalCode: SW
+    region: United Kingdom
+    postalCode: 
     countryCode: GB
 
   sections:
@@ -44,7 +45,7 @@ cv:
         end_date: 2023
         highlights:
           - Final thesis explored the use of Neural Radiance Fields (NeRFs) for creating novel views to aid robot localization.
-          - Description 2.
+          # - Description 2.
 
     Experience:
       - company: University of Cape Town
@@ -93,94 +94,113 @@ cv:
 
 
     Awards:
-      - title: Nobel Prize in Physics
+      - title: Dean's Merit List
         authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+          # - "Royal Swedish Academy of Sciences"
+        date: 2022
+        awarder: University of Cape Town
+        # url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
+        summary: Placed on the UCT Dean's Merit list for the 2022 academic year, an honor awarded to students who achieve a high level of academic excellence.
 
-      - title: Max Planck Medal
+      - title: Golden Key
         authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+          # - "German Physical Society"
+        date: 2022
+        awarder: Golden Key International Honour Society
+        summary: Joined as a member of the Golden Key International Honour Society.
+
+      - title: Dean's Merit List
+        authors:
+        date: 2021
+        awarder: University of Cape Town
+        summary: Placed on the UCT Dean's Merit list for the 2021 academic year, an honor awarded to students who achieve a high level of academic excellence.
 
     Publications:
+      - title: "Language Enabled Hierarchical Scene Graphs for Precision Agriculture Autonomy"
+        authors:
+          - Adam Mukuddem, Adam Speed-Andrews and Paul Amayo
+        publisher: IEEE International Conference on Robotics and Automation (ICRA)
+        releaseDate: 2026
+        # url: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1732004/full
+        summary: We advance the 3D Scene graph model introduced of Osiris, adapting it to support autonomy through a Visual Teach and Repeat paradigm, which does not rely on an expansive navigation stack. Additionally, we exploit large language models to correctly ground instructions within the newly constructed 3D scene graph representation, thus enabling natural language directives to be relayed to robotic systems in agricultural contexts.
+
       - title: "Osiris++: hierarchical representations for robotic-enabled precision agriculture"
         authors:
-          - Adam Mukuddem, Adam Speed-Andrews, Thabisa Maweni, Imannuel Nanyaro, Ritvik Sojen, Venny Hsiao and Paul Amayo
+          - Adam Mukuddem, Adam Speed-Andrews, Thabisa Maweni, Imannuel Nanyaro, Ritvik Sojen, Venny Hsiao, and Paul Amayo.
         publisher: Frontiers in Robotics and AI
-        releaseDate: 2026-02-26
+        releaseDate: 2026-02-01
         url: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1732004/full
-        summary: A flexible approach designed to allow seamless communication between robots and humans on an array of precision agriculture tasks. We validate and evaluate the performance of Osiris++ in real-world agricultural environments, demonstrating that the system can create accurate and useful scene graphs that aid in solving the assigned tasks. This paves the way for the possibility of allowing natural language instructions, including those in African languages, to be issued to robots within the agricultural sector.
+        summary: In this work, we introduce Osiris++, a flexible approach designed to allow seamless communication between robots and humans on an array of precision agriculture tasks. We validate and evaluate the performance of Osiris++ in real-world agricultural environments, demonstrating that the system can create accurate and useful scene graphs that aid in solving the assigned tasks. This paves the way for the possibility of allowing natural language instructions, including those in African languages, to be issued to robots within the agricultural sector.
 
-      - title: "Osiris++: hierarchical representations for robotic-enabled precision agriculture"
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Languages
+        level: 
+        icon: fa-solid fa-laptop
+        keywords: "Python, C/C++, MATLAB, Java"
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+      - name: Libraries & Tools
+        level: 
+        icon: fa-solid fa-hammer
+        keywords: "OpenCV, NumPy, SciPy, Eigen, Pandas"
 
-      - name: English
-        summary: "Fluent"
+      - name: Frameworks & Middleware
+        level: 
+        icon: fa-solid fa-cube
+        keywords: "ROS,/ROS2, PyTorch, NerfStudio"
+
+      - name: Simulations & Visualization
+        # level: Master
+        icon: fa-solid fa-display
+        keywords: " Gazeebo, RVIZ, LtSpice" 
+
+      - name: Design & CAD tools
+        # level: Master
+        icon: fa-solid fa-compass-drafting
+        keywords: "Solidworks, Shapr3D, KiKad, EasyEda"
+
+    # Languages:
+    #   - name: German
+    #     summary: "Native speaker"
+
+    #   - name: English
+    #     summary: "Fluent"
 
     Interests:
-      - name: Physics
+      - name: Robotics
         icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+        keywords: "Field Robotics, Computer Vision, Autonomous Navigation, Automation, Human Robot Interaction"
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+    # Certificates:
+    #   - name: Machine Learning
+    #     date: 2018-01-01
+    #     issuer: Stanford University
+    #     icon: fa-solid fa-location-dot
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+    #   - name: Quantum Computing
+    #     date: 2018-01-01
+    #     issuer: Stanford University
+    #     icon: fa-solid fa-tag
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+    #   - name: Quantum Information
+    #     date: 2018-01-01
+    #     issuer: Stanford University
+    #     icon: fa-solid fa-envelope
 
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+    # Projects:
+    #   - name: Quantum Computing
+    #     summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+    #     highlights:
+    #       - Quantum Teleportation
+    #       - Quantum Cryptography
+    #     start_date: 2018-01-01
+    #     end_date: 2018-01-01
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    # References:
+    #   - name: Professor John Doe
+    #     icon: fa-solid fa-laptop
+    #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    #   - name: Professor Jane Smith
+    #     icon: fa-solid fa-thumbtack
+    #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
