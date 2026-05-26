@@ -6,7 +6,7 @@ nav: true
 nav_order: 5
 cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
-description: A complete look at my academic professional history. You can also download a PDF copy.
+description: A complete look at my academic and professional history. You can also download a PDF copy.
 toc:
   sidebar: left
 ---
