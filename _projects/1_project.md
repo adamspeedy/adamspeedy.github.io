@@ -5,72 +5,92 @@ description:  An investigation into methods of visual autonomous navigatino for 
 img: assets/img/long_term_nav_preview.jpg
 importance: 1
 category: robotics
-related_publications: true
+related_publications: false
 ---
 
-This work, as part of my masters thesis, investigated the viability of achieving meaningful autonomy in agricultural settings using solely visual methods. Agricultural environments experience significant visual changes both as a result of changing lighting over a single day and larger appearance changes resulting from changing season or normal farming activities.
+## Overview
+Achieving reliable autonomous navigation in unstructured outdoor environments remains a central challenge in field robotics. Agricultural settings are particularly demanding: crop rows provide only a narrow operational corridor, while the environment undergoes continuous visual change, from shifting shadows throughout the day to large appearance variations caused by seasonal changes, crop growth, and routine farming activities.
 
-To address these challenges, this work evaluates a landmark-based teach and repeat paradigm which uses feature triangulation for localization. With a further focus on the integration of multiple visual experiences of the same route, captured at different times, to improve robustness against substantial appearance variation.
+This project investigates whether a vision-based navigation system can provide long-term autonomy in these conditions and explores how leveraging multiple prior traversals of the same route can extend the period of reliable operation.
 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/long_term_nav/another_view.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/long_term_nav/rain_traversal.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/long_term_nav/sunny_traversal.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/long_term_nav/charging_a300.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/long_term_nav/rain_a300.gif" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    A Clearpath Husky A300 operating on a blueberry farm in Paarl, Western Cape, South Africa, under active rainfall (left) and bright midday sunlight (centre). The robot autonomously navigates between crop rows using only stereo camera input.
 </div>
+
+## Backround
+Most commercial autonomous vehicles rely heavily on GPS or dedicated infrastructure. In dense crop rows, however, GPS signals can be unreliable, while the installation and maintenance of infrastructure is often impractical for farming operations.
+
+A vision-only approach is therefore both attractive and technically challenging. The key difficulty is not simply following a known route, but recognising that route when its appearance has changed significantly since it was first taught. Illumination changes are particularly problematic: the same crop row captured at dawn, midday, and dusk can appear dramatically different to a feature-based localisation system.
+
+
+## Teach & Repeat
+The navigation framework used in this work follows a Visual Teach & Repeat (VT&R) paradigm. During the teach phase, the robot is manually driven along a desired route while building a map of visual landmarks. During the repeat phase, the robot autonomously re-traverses the route by localising itself against this stored map in real time.
+
+This work builds upon the VT&R3 framework developed by the Autonomous Space Robotics Lab (ASRL) at the University of Toronto Institute for Aerospace Studies (UTIAS).
+
+Localisation is achieved through feature matching and triangulation. By tracking visual landmarks across successive stereo images, the system estimates its deviation from the taught path and generates corrective steering commands. The approach relies solely on stereo vision, making it lightweight and deployable on affordable hardware.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="images/long_term_nav/a300.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/long_term_nav/pipeline_diagram.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/long_term_nav/landmark_migration.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Overview of the VT&R pipeline (left). Visual features are extracted and triangulated from stereo images before being matched against a stored submap within the relative pose graph. The pose graph structure is illustrated on the right with landmark locations being migrated to the current goal frame.
 </div>
 
-The proposed methods are deployed and evaluated on Clearpath Husky robotic platforms in real-world crop row environments. Experiments assess path tracking performance, and failure modes under varying illumination and weather conditions. Additionally, testing whether the
-use of multiple visual experiences result in long-term gains to navigation performance
+
+
+## Multi-Experience Integration
+A single taught experience captures the environment at one moment in time. When conditions differ substantially from that snapshot, due to seasonal changes, varying canopy cover, or significant lighting differences, the number of trackable landmarks decreases, causing localisation performance to degrade or fail.
+
+To address this limitation, this work investigates the integration of multiple visual experiences of the same route, each recorded under different environmental conditions. Rather than replacing the original map, these experiences supplement it. During navigation, the system can localise against whichever experience provides the strongest visual correspondence to current conditions.
+
+This multi-experience approach acts as a form of environmental memory, allowing the robot to maintain localisation across a much wider range of appearance changes than would be possible with a single experience alone.
+
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/long_term_nav/single_exp_inliers.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/long_term_nav/multi_exp_inliers.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+<div class="caption">    
+    Feature-tracking visualisation using a single taught experience (left) and multiple experiences (right). line correspondences indicate matched landmarks between the live camera image and stored landmarks in map. Access to multiple experiences increases the likelihood of finding reliable matches and maintaining localisation.
 </div>
 
-The results demonstrate that the such an approach successfully navigates under most conditions, with failures primarily occurring under extreme lighting and substantial appearance changes in the order of months. The incorporation of multiple visual experiences is shown to enhance navigation reliability, enabling successful traversal in scenarios where using a single taught experience failed, effectively extending the window of reliable operation.
+
+## System Development and Deployment
+A major component of this project involved developing and deploying the complete navigation stack on a Clearpath Husky platform. This included migrating the VT&R3 codebase to ROS 2 Jazzy, integrating a new sensor suite, and incorporating a visual-inertial odometry (VIO) prior to improve mapping performance in uneven terrains.
+
+Field deployment on a working blueberry farm in Paarl, Western Cape, introduced challenges beyond the software itself. Testing had to be coordinated around active farming operations while maintaining reliable system performance in dusty, wet, and highly variable environmental conditions.
+
+Evaluation was conducted across multiple field visits spanning different seasons and times of day. Each deployment provided valuable insight into real-world failure modes and informed iterative improvements to both the software and hardware systems.
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Results
+The proposed approach demonstrated reliable autonomous navigation across the majority of tested conditions, with path-tracking performance remaining within practical limits for agricultural operation.
 
-{% raw %}
+Experiments showed that the single-experience landmark-based navigation framework could successfully repeat routes under most conditions. Failures primarily occurred during periods of extreme illumination change or significant appearance variation caused by seasonal transitions.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+The incorporation of multiple visual experiences substantially improved robustness by extending the period of successful operation from hours to days. In several cases, the robot successfully completed routes that could not be navigated using a single taught experience alone.
 
-{% endraw %}
+These results highlight the importance of experience diversity for long-term visual navigation and demonstrate that multi-experience mapping can significantly improve navigation reliability in changing agricultural environments.
+
