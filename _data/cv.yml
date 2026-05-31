@@ -7,8 +7,6 @@ cv:
   image: ""
   summary: A Masters in Electrical Engineering Candidate with a strong background in Mechatronics, specializing in Robotics, Computer Vision, and Machine Learning. Experienced in research and teaching, with a focus on long-term navigation of ground robots in agricultural environments. I'm particularly interested in building robotic systems that can operate robustly in complex, dynamic real-world environments. Having recently relocated to London, I am currently seeking opportunities in robotics, autonomous systems, computer vision, or related engineering fields.
 
-
-
   social_networks:
     - network: GitHub
       username: adamspeedy
@@ -16,10 +14,10 @@ cv:
       username: adam-speed-andrews-b954a9258
 
   address:
-    street: 
+    street:
     city: London
     region: United Kingdom
-    postalCode: 
+    postalCode:
     countryCode: GB
 
   sections:
@@ -80,7 +78,7 @@ cv:
         location: Cape Town, South Africa
         start_date: Feb. 2023
         end_date: Jun. 2024
-        summary: Tutor for the Electrical Engineering Faculty in the subjects of Signals and Systems II, Electronic Devices and Circuits, Control Systems Engineering and Analogue Electronics. 
+        summary: Tutor for the Electrical Engineering Faculty in the subjects of Signals and Systems II, Electronic Devices and Circuits, Control Systems Engineering and Analogue Electronics.
         # highlights:
         #   - Description 1.
         #   - Description 2.
@@ -91,7 +89,6 @@ cv:
         start_date: Jul. 2021
         end_date: Aug. 2021
         summary: With mentoring I pursued a project on automation using Microsoft Desktop Power Automate, my final presentation to the company included a demo automating online flight bookings.
-
 
     Awards:
       - title: Dean's Merit List
@@ -132,27 +129,26 @@ cv:
         url: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1732004/full
         summary: In this work, we introduce Osiris++, a flexible approach designed to allow seamless communication between robots and humans on an array of precision agriculture tasks. We validate and evaluate the performance of Osiris++ in real-world agricultural environments, demonstrating that the system can create accurate and useful scene graphs that aid in solving the assigned tasks. This paves the way for the possibility of allowing natural language instructions, including those in African languages, to be issued to robots within the agricultural sector.
 
-
     Skills:
       - name: Languages
-        level: 
+        level:
         icon: fa-solid fa-laptop
         keywords: "Python, C/C++, MATLAB, Java"
 
       - name: Libraries & Tools
-        level: 
+        level:
         icon: fa-solid fa-hammer
         keywords: "OpenCV, NumPy, SciPy, Eigen, Pandas"
 
       - name: Frameworks & Middleware
-        level: 
+        level:
         icon: fa-solid fa-cube
         keywords: "ROS,/ROS2, PyTorch, NerfStudio"
 
       - name: Simulations & Visualization
         # level: Master
         icon: fa-solid fa-display
-        keywords: " Gazeebo, RVIZ, LtSpice" 
+        keywords: " Gazeebo, RVIZ, LtSpice"
 
       - name: Design & CAD tools
         # level: Master
