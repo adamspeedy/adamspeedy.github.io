@@ -2,7 +2,7 @@
 layout: page
 title: Localizing using Neural Radiance Fields (NeRF)
 description: An investigation into the the use of Neural Radiance Fields (NeRFs) for visual localisation. NeRF can create photo-realistic views from previously unseen viewpoints, the goal was to investigate whether these rendered views could be used as a map for appearance-based localisation.
-img: assets/img//NeRF/NeRF_presentation.jpeg
+img: assets/img/NeRF/NeRF_presentation.jpeg
 importance: 4
 category: robotics
 ---
@@ -66,7 +66,7 @@ The project demonstrated that traditional feature-based localisation techniques 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid path="assets/img/NeRF/more_training_poses.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/NeRF/more_training_poses.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid path="assets/img/NeRF/ngp-ORb.png" title="example image" class="img-fluid rounded z-depth-1" %}
