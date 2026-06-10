@@ -446,21 +446,11 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-embedded-play-around",
-          title: 'Embedded Play Around',
-          description: "Embedded Play Around",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
             },},{id: "projects-automatic-bird-scale",
           title: 'Automatic Bird Scale',
           description: "Automatic Bird Scale",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-matlab-simulation",
-          title: 'Matlab Simulation',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
@@ -476,7 +466,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("/assets/rendercv/rendercv_output/Speedy.pdf", "_blank");
         },
       },{
         id: 'social-email',
