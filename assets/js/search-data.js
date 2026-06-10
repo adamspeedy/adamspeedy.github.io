@@ -433,7 +433,7 @@ ninja.data = [{
               window.location.href = "/projects/3_project/";
             },},{id: "projects-localizing-using-neural-radiance-fields-nerf",
           title: 'Localizing using Neural Radiance Fields (NeRF)',
-          description: "another without an image",
+          description: "An investigation into the the use of Neural Radiance Fields (NeRFs) for visual localisation. NeRF can create photo-realistic views from previously unseen viewpoints, the goal was to investigate whether these rendered views could be used as a map for appearance-based localisation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-line-following-robot",
