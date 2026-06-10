@@ -9,6 +9,7 @@ A personal portfolio website built with the [al-folio](https://github.com/alshed
 ## About
 
 This is my personal portfolio site, showcasing my projects, experience, and background. It's built on the al-folio theme.
+
 ## Built With
 
 - [Jekyll](https://jekyllrb.com/) — static site generator

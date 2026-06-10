@@ -28,7 +28,6 @@ latest_posts:
 <!-- I am an extrovert and thrive on interacting with people. I have strong communication skills, which I have developed through various courses and many years of teaching. Through my Master's degree with the African Robotics Unit, I have deepened my interest in computer vision and spatial intelligence through hands on experience with real-world visual systems. I have strong analytical and problem-solving skills, which I hope to apply and develop further in the sports technology industry.
  -->
 
-
 Hi, I’m Adam Speed-Andrews - although most people know me as “Speedy”.
 
 I’m a mechatronics engineer and Electrical Engineering master’s candidate from Cape Town, South Africa. Over the past two years I've been part of the [African Robotics Unit](https://africanroboticsunit.com), where my research focussed on autonomous navigation for agricultural robots and the challenges of reliably operating in changing real-world environments.
@@ -40,8 +39,6 @@ I’m also someone who genuinely enjoys working with people. Through various tea
 Outside of engineering, I’m usually running, hiking, watching the [Springboks](https://www.thesouthafrican.com/lifestyle/celeb-news/what-did-we-do-to-deserve-springboks-goat-siyamthanda-kolisi/), or looking for new experiences and conversations with interesting people.
 
 Having recently moved to `London`, I’m excited to continue growing in the robotics space and contribute to teams building intelligent systems for the real world.
-
-
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
