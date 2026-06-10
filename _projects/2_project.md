@@ -2,10 +2,10 @@
 layout: page
 title: Semantic Navigation
 description: a project with a background image and giscus comments
-img: assets/img/semantic_nav/photo_shoot.jpeg
+img: assets/img/semantic_nav/sem_nav_preview.jpeg
 importance: 2
 category: robotics
-giscus_comments: true
+giscus_comments: false #true
 ---
 
 Every project has a beautiful feature showcase page.

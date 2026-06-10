@@ -2,8 +2,8 @@
 layout: page
 title: Line Following Robot
 description: a project with a background image
-img: assets/img/line_following/group_photo.jpeg
-importance: 4
+img: assets/img/line_following/lil_john_preview.jpeg
+importance: 6
 category: robotics
 ---
 

@@ -3,9 +3,9 @@ layout: page
 title: Automatic Bird Scale
 description: Automatic Bird Scale
 img: assets/img/bird_scale/preview.jpeg
-importance: 2
+importance: 7
 category: software & automation
-giscus_comments: true
+giscus_comments: false
 ---
 
 Every project has a beautiful feature showcase page.

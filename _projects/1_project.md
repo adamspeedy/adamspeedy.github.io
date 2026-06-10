@@ -2,7 +2,7 @@
 layout: page
 title: Long Term Navigation of Ground Robots
 description:  An investigation into methods of visual autonomous navigatino for use in agricultural environments. With a further focus on integrating multiple experiences of the same place at differnt times to improve robustness against appearance variation. 
-img: assets/img/long_term_nav_preview.jpg
+img: assets/img/long_term_nav/preview_a300.jpeg
 importance: 1
 category: robotics
 related_publications: false

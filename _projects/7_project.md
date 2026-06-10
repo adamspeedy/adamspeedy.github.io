@@ -1,11 +1,11 @@
----
+<!-- ---
 layout: page
 title: Embedded Play Around
 description: Embedded Play Around
 img: assets/img/embedded/sensors.jpeg
-importance: 3
+importance: 8
 category: software & automation
-related_publications: true
+related_publications: false
 ---
 
 Every project has a beautiful feature showcase page.
@@ -78,4 +78,4 @@ Here's the code for the last row of images above:
 </div>
 ```
 
-{% endraw %}
+{% endraw %} -->

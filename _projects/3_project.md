@@ -2,8 +2,8 @@
 layout: page
 title: Visual Servoing
 description: a project that redirects to another website
-img: assets/img/visual_servo/voyager-sensors.jpeg
-redirect: https://unsplash.com
+img: assets/img/visual_servo/voyager_preview.jpeg
+# redirect: https://unsplash.com
 importance: 3
 category: robotics
 ---

@@ -2,8 +2,8 @@
 layout: page
 title: Instron Testing Machine
 description: a project with no image
-img: assets/img/nutec/preview.jpeg
-importance: 1
+img: assets/img/nutec/instron_preview.jpeg
+importance: 5
 category: software & automation
 ---
 
