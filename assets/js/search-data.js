@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "publications",
-          description: "publications in reversed chronological order.",
+          description: "A list of publications I&#39;ve been involved in, shown in reversed chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -400,12 +400,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
+      },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
@@ -421,14 +416,9 @@ ninja.data = [{
           description: "An investigation into methods of visual autonomous navigatino for use in agricultural environments. With a further focus on integrating multiple experiences of the same place at differnt times to improve robustness against appearance variation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-semantic-navigation",
-          title: 'Semantic Navigation',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-visual-servoing",
-          title: 'Visual Servoing',
-          description: "a project that redirects to another website",
+            },},{id: "projects-visual-servoing-robot-navigation",
+          title: 'Visual Servoing Robot Navigation',
+          description: "An evaluation of a featureless, appearance-based visual teach and repeat system for autonomous robot navigation in agricultural crop rows, using direct whole-image correlation to estimate and correct heading deviations along a taught route.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-localizing-using-neural-radiance-fields-nerf",
@@ -436,19 +426,19 @@ ninja.data = [{
           description: "An investigation into the the use of Neural Radiance Fields (NeRFs) for visual localisation. NeRF can create photo-realistic views from previously unseen viewpoints, the goal was to investigate whether these rendered views could be used as a map for appearance-based localisation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-line-following-robot",
-          title: 'Line Following Robot',
-          description: "a project with a background image",
+            },},{id: "projects-line-following-maze-solving-robot",
+          title: 'Line-Following Maze-Solving Robot',
+          description: "An autonomous line-following robot designed and built to navigate and solve a black-line maze, using custom-designed sensor circuitry and an Arduino Nano 33 IoT microcontroller. The project spanned hardware design, circuit fabrication, motion control simulation, and software algorithm development.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-instron-testing-machine",
-          title: 'Instron Testing Machine',
-          description: "a project with no image",
+            },},{id: "projects-adhesion-testing-machine-modernisation",
+          title: 'Adhesion Testing Machine Modernisation',
+          description: "This project involved redesigning an industrial adhesion testing machine to provide precise motor control, automated force measurement, and an intuitive operator interface. Built around a multi-core ESP32 and custom PCB hardware, the system enabled smooth real-time control and data acquisition within a compact embedded platform.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-automatic-bird-scale",
-          title: 'Automatic Bird Scale',
-          description: "Automatic Bird Scale",
+            },},{id: "projects-automated-bird-scale",
+          title: 'Automated Bird Scale',
+          description: "This project introduces an proof of concept design for an automated, field-deployable scale designed to track the weight of Red-winged starlings to assist in climate change and urbanization research. The embedded system combines RFID technology for individual bird identification with a precise load cell processing pipeline, automatically logging and syncing data to the cloud with minimal human intervention.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
             },},{id: "teachings-data-science-fundamentals",
@@ -473,7 +463,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%61%64%61%6D%73%61@%6D%77%65%62.%63%6F.%7A%61", "_blank");
+          window.open("mailto:%73%70%65%65%64%61%6E%64%72%65%77%73%61@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-scholar',
