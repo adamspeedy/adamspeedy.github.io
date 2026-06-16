@@ -1,81 +1,64 @@
 ---
 layout: page
-title: Automatic Bird Scale
-description: Automatic Bird Scale
-img: assets/img/bird_scale/preview.jpeg
+title: Automated Bird Scale
+description: This project introduces an proof of concept design for an automated, field-deployable scale designed to track the weight of Red-winged starlings to assist in climate change and urbanization research. The embedded system combines RFID technology for individual bird identification with a precise load cell processing pipeline, automatically logging and syncing data to the cloud with minimal human intervention.
+img: assets/img/bird_scale/square_preview.jpeg
 importance: 7
 category: software & automation
 giscus_comments: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project was developed for the Fitzpatrick Institute of African Ornithology at the University of Cape Town (UCT) to assist in ongoing research regarding how urbanization and climate change impact Red-winged starlings. Tracking weight fluctuations is pivotal to understanding these birds' environmental adaptability, but the legacy methodology relied on manual digital scales, field tracking, and human logging, a highly inefficient and time-consuming process. To address this challenge, our group of engineering students designed a proof of concept prototype of an automated, portable embedded system capable of identifying individual birds, accurately capturing their weight, and logging data with minimal human intervention.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bird_scale/fitz_bird.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bird_scale/internals.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bird_scale/preview.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    System evolution from the legacy manual weighing process for Red-winged starlings (left) to the internal electronic prototyping phase (middle) and the final, fully assembled, field-ready automated scale (right).
 </div>
+
+## Hardware & Structural Design
+
+The mechanical and sensor hardware consists of a specialized weighing platform integrated with Radio Frequency Identification (RFID) and a custom load cell system. Utilizing a 3kg parallel beam strain gauge load cell coupled with an HX711 24-bit Analog-to-Digital Converter (ADC) amplifier, the system achieves highly precise small-mass measurements. To identify specific birds, low-cost passive integrated transponder (PIT) RFID tags are fitted to the birds, which are scanned by an RFID antenna securely integrated just beneath the weighing platform. The entire device is enclosed in a compact, robust 3D-printed housing engineered to secure the electronics and withstand outdoor environmental factors during campus deployments.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bird_scale/rfid_distance.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/bird_scale/rfid_antenna.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/bird_scale/3d_print.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Hardware integration overview highlighting the positioning of the RFID antenna and the load cell configuration.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Embedded Systems, Data Processing, & Automation
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+At the core of the system’s data intelligence is a Raspberry Pi Zero W executing a Python-based data processing pipeline. When an RFID tag is detected, the system records the date and time, activates the load cell, and samples the weight data. To counter erratic bird movements, the software captures a series of weight readings over a set period, filters out outliers, and averages the remaining data to establish a precise weight profile. Finally, the integrated dataset (Identity, Weight, Gender, and Timestamp) is compiled into structured Excel logs and automatically synchronized to a cloud-based Google Drive repository via scheduled daily Cron tasks, providing researchers with remote, real-time access to automated summaries.
+
+<div class="row">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/bird_scale/larger_diagram.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/bird_scale/data_output.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    High-level system architecture and power management block diagram (left) alongside a real-time data stream of filtered load cell weight readings processed by the Raspberry Pi (right).
 </div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

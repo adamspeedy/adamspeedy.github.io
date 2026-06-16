@@ -1,80 +1,57 @@
 ---
 layout: page
-title: Instron Testing Machine
-description: a project with no image
+title: Adhesion Testing Machine Modernisation
+description: This project involved redesigning an industrial adhesion testing machine to provide precise motor control, automated force measurement, and an intuitive operator interface. Built around a multi-core ESP32 and custom PCB hardware, the system enabled smooth real-time control and data acquisition within a compact embedded platform.
 img: assets/img/nutec/instron_preview.jpeg
 importance: 5
 category: software & automation
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+During an industrial placement at NUTEC Digital Ink, I was tasked with modernising an adhesion testing machine used to measure laminate and label adhesion strength. The existing system provided only basic force measurements, requiring operators to manually record peak values. The goal was to improve usability, automate data collection, and provide researchers with greater control over testing procedures.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nutec/inside_instron.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nutec/demo_video.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/nutec/display_view.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    The modernised testing machine, featuring a stepper motor-driven linear actuator, load cell, and a custom touchscreen user interface for control and real-time data visualisation.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+
+## Human-Machine Interface Design
+
+A significant aspect of the project involved designing a user interface that could be operated intuitively by researchers and technicians with varying levels of technical expertise. The interface was developed around a clear workflow that allowed users to configure tests, control actuator movement, monitor force measurements, and export collected data.
+
+To minimise processing load on the control hardware, the interface was implemented using a state-based architecture, where the display handled the majority of user interaction and visualisation tasks independently. This enabled responsive navigation while providing real-time graphical feedback of force measurements and machine status. The resulting interface simplified operation of the machine and significantly improved the accessibility of experimental data.
+
+## Real-Time Control Using a Multi-Core ESP32
+
+The machine utilised a stepper-motor-driven linear actuator to apply controlled tensile forces while simultaneously measuring load-cell data. Achieving smooth actuator motion while recording force measurements presented a real-time processing challenge, as both tasks had to execute concurrently without affecting one another.
+
+To address this, the system was built around a multi-core ESP32 microcontroller. Motion control and force acquisition were separated across processor cores, allowing the actuator to maintain smooth movement while force data was sampled and logged in real time. This architecture enabled precise speed and position control while continuously recording force measurements throughout each test. Logged data could then be stored, visualised on the interface, and exported via microSD card or email for further analysis.
+
+## Custom PCB Development
+
+To integrate the various electronic components into a reliable and maintainable system, a custom breakout PCB was designed. The board consolidated connections between the ESP32, motor control hardware, sensors, and user interface while fitting within the existing machine enclosure.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/nutec/pcb_new.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/nutec/pcb_design.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Breakout PCB for the ESP32 microcontroller.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Particular attention was given to serviceability and future development, ensuring that the microcontroller remained easily accessible for firmware updates and system modifications. 
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
