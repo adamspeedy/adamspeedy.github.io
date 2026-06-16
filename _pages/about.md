@@ -32,7 +32,7 @@ Hi, I’m Adam Speed-Andrews - although most people know me as “Speedy”.
 
 I’m a mechatronics engineer and Electrical Engineering master’s candidate from Cape Town, South Africa. Over the past two years I've been part of the [African Robotics Unit](https://africanroboticsunit.com), where my research focussed on autonomous navigation for agricultural robots and the challenges of reliably operating in changing real-world environments.
 
-What draws me to robotics is the blend of creativity, problem solving and hands-on engineering. I enjoy taking ideas from concept to field testing - building systems, experimenting quickly, and refining solutions that can make an impact outside the lab.
+What draws me to robotics is the blend of creativity, problem solving and hands-on engineering. I enjoy taking ideas from concept to field testing;  building systems, experimenting quickly, and refining solutions that can make an impact outside the lab.
 
 I’m also someone who genuinely enjoys working with people. Through various teaching roles, I’ve developed a strong appreciation for collaboration, communication, and learning from others. I do my best work in teams where curious people are solving ambitious problems together.
 

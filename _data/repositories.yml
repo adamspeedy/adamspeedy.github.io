@@ -1,8 +1,7 @@
 github_users:
-  - adamspeedy
-  # - alshedivat
+  # - adamspeedy
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
   - adamspeedy/vtr3
