@@ -24,7 +24,6 @@ During an industrial placement at NUTEC Digital Ink, I was tasked with modernisi
     The modernised testing machine, featuring a stepper motor-driven linear actuator, load cell, and a custom touchscreen user interface for control and real-time data visualisation.
 </div>
 
-
 ## Human-Machine Interface Design
 
 A significant aspect of the project involved designing a user interface that could be operated intuitively by researchers and technicians with varying levels of technical expertise. The interface was developed around a clear workflow that allowed users to configure tests, control actuator movement, monitor force measurements, and export collected data.
@@ -53,5 +52,4 @@ To integrate the various electronic components into a reliable and maintainable 
     Breakout PCB for the ESP32 microcontroller.
 </div>
 
-Particular attention was given to serviceability and future development, ensuring that the microcontroller remained easily accessible for firmware updates and system modifications. 
-
+Particular attention was given to serviceability and future development, ensuring that the microcontroller remained easily accessible for firmware updates and system modifications.

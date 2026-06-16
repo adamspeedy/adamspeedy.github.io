@@ -12,7 +12,6 @@ giscus_comments: false
 
 This project was developed for the Fitzpatrick Institute of African Ornithology at the University of Cape Town (UCT) to assist in ongoing research regarding how urbanization and climate change impact Red-winged starlings. Tracking weight fluctuations is pivotal to understanding these birds' environmental adaptability, but the legacy methodology relied on manual digital scales, field tracking, and human logging, a highly inefficient and time-consuming process. To address this challenge, our group of engineering students designed a proof of concept prototype of an automated, portable embedded system capable of identifying individual birds, accurately capturing their weight, and logging data with minimal human intervention.
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/bird_scale/fitz_bird.jpg" title="example image" class="img-fluid rounded z-depth-1" %}

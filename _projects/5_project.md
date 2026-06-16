@@ -6,6 +6,7 @@ img: assets/img/line_following/lil_john_preview.jpeg
 importance: 6
 category: robotics
 ---
+
 As part of an engineering course, I worked in a group of three to design and build an autonomous line-following robot capable of navigating and solving a black-line maze. The robot was built around an Arduino Nano 33 IoT microcontroller and consisted of a metal chassis, two motorised wheels with a dedicated motor driver, four infrared line sensors, and custom-designed Veroboard circuits for light sensing and communication.
 
 <div class="row">
@@ -24,7 +25,6 @@ As part of an engineering course, I worked in a group of three to design and bui
 </div>
 
 A key hardware challenge was designing a light colour sensor circuit capable of reliably distinguishing between red and green light signals, which were used to communicate information to the robot. After several design iterations — beginning with a simple LDR comparator circuit that suffered from false triggers due to ambient light fluctuations — the final design paired each colour LDR with its own ambient reference LDR in a voltage divider configuration. A potentiometer allowed dynamic calibration, and a single LM358 op-amp IC provided stable comparisons at the 3.3V logic level required by the Arduino. A voltage regulator circuit using an LM317T was also designed to step down the battery supply to a stable 3.3V rail.
-
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
