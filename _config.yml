@@ -12,7 +12,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
 
-keywords: Speed-Andrews, adam speed, resume, cv, academic-website, portfolio-website
+keywords: Adam Speed-Andrews, Speed-Andrews, adam speed, resume, cv, academic-website, portfolio-website
 lang: en
 icon: favicon/book.png # ⚛️
 
@@ -67,7 +67,7 @@ max_width: 980px
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
